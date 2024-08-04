@@ -6,8 +6,8 @@
       ran =  {
         x86-64-linux = 
         if inp?legacyPackages
-        then inputs.legacyPackages.x86_64-linux.ran;
-        else (import inp {system="x86_64-linux";}).ran
+        then inputs.legacyPackages.x86_64-linux.ran
+        else (import inp {system="x86_64-linux";}).ran;
       };
     });
   };
