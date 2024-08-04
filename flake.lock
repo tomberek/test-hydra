@@ -1,12 +1,26 @@
 {
   "nodes": {
+    "flake-compat": {
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "revCount": 57,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/edolstra/flake-compat/1.0.1/018afb31-abd1-7bff-a5e4-cff7e18efb7a/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1722750712,
-        "narHash": "sha256-pZPJR7VjC75x9/nvhh4xXUklv4F+sBkIhCUFmjjMe5E=",
+        "lastModified": 1722752824,
+        "narHash": "sha256-JwWYPVG1hxOsoBtcv7t0lI94m/t7a3gOITcRgDEQPRE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "8d04d99e7d97e004f76928583f05a9100d455148",
+        "rev": "1a01fa89b57d5c64c69017a7e835168c938d17e0",
         "type": "github"
       },
       "original": {
@@ -17,6 +31,7 @@
     },
     "root": {
       "inputs": {
+        "flake-compat": "flake-compat",
         "nixpkgs": "nixpkgs"
       }
     }
