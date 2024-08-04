@@ -7,4 +7,4 @@
     }
   )
   { src = ./.; }
-).defaultNix.hydraJobs
+).defaultNix
