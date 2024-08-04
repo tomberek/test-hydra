@@ -4,7 +4,10 @@
   outputs = inputs: {
     hydraJobs = ({inp ? inputs.nixpkgs}: {
       ran =  {
-        x86-64-linux = (if builtins.isString inp then builtins.getFlake inp else inp).legacyPackages.x86_64-linux.ran;
+        x86-64-linux = 
+        if builtins.isString inp
+        then (import inp {system="x86_64-linux";}).ran
+        else inputs.legacyPackages.x86_64-linux.ran;
       };
     });
   };
